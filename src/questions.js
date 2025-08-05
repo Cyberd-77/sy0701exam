@@ -14,7 +14,7 @@
 /**
  * @type {Question[]}
  */
-const questions = [
+const questionsPool = [
   // --- Domain 1.0: Attacks, Threats, and Vulnerabilities ---
   {
     id: 101,
