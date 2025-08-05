@@ -1,4 +1,4 @@
-// questionsData.js
+// questions.js
 
 /**
  * @typedef {Object} Question
