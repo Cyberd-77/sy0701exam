@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   ChevronDown, ChevronUp, CheckCircle2, XCircle, SkipForward, ArrowLeft, ArrowRight, Flag, RefreshCw, Play, Pause, ExternalLink
 } from 'lucide-react';
-import questionsPool from './questions'; // Import questions from a separate file
+import questionsPool from './questions.js'; // Import questions from a separate file
 
 // Custom hook to detect mobile view, replacing react-responsive
 const useIsMobile = (maxWidth) => {
