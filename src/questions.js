@@ -1156,4 +1156,4 @@ const questionsPool = [
   },
 ];
 
-export default questions;
+export default questionsPool;
