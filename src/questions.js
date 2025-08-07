@@ -1145,7 +1145,7 @@ const questionsPool = [
     difficulty: "Easy",
     explanation: "A threat is a potential cause of an unwanted incident that may result in harm to a system or organization. A vulnerability is a weakness in a system or design that can be exploited by a threat."
   },
-  {
+{
     id: 525,
     question: "Which of the following would be considered an 'administrative control'?",
     options: ["Firewall rules", "Encryption", "Security awareness training", "Intrusion detection system"],
@@ -1153,7 +1153,7 @@ const questionsPool = [
     domain: "5.0 Governance, Risk, and Compliance",
     difficulty: "Medium",
     explanation: "Administrative controls (or procedural controls) are policies, procedures, and guidelines implemented to manage and enforce security, such as security awareness training, hiring practices, and incident response plans."
-  },
+  }
 ];
 
 export default questionsPool;
