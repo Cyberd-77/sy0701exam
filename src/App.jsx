@@ -67,21 +67,22 @@ const QuizApp = () => {
   };
 
   const startNewExam = () => {
-    // Shuffle the entire pool of 200 questions and select the first 100 for the exam.
+    // Check if questionsPool is empty before proceeding
+    if (!questionsPool || questionsPool.length === 0) {
+      console.error("The questionsPool is empty or undefined. Check the questions.js file.");
+      return; // Stop the function from running to prevent a crash
+    }
     const shuffledQuestions = shuffleArray(questionsPool);
-    const selectedQuestions = shuffledQuestions.slice(0, 100);
+    const selectedQuestions = shuffledQuestions.slice(0, 50); // Select the first 50 questions
     setCurrentQuestions(selectedQuestions);
-    setUserAnswers(new Array(selectedQuestions.length).fill(null));
+    setUserAnswers(Array(selectedQuestions.length).fill(null));
     setCurrentQuestionIndex(0);
     setExamStarted(true);
     setExamFinished(false);
     setShowResults(false);
-    setShowHint(false);
-    setReviewMode(false);
-    setFlaggedQuestions(new Set());
     setTimeRemaining(75 * 60);
     setIsPaused(false);
-    setShowNavigation(false);
+    setFlaggedQuestions(new Set());
   };
 
   const handleAnswerChange = (option) => {
