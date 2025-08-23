@@ -19,7 +19,7 @@ const questionsPool = [
   // --- Domain 1.0: Attacks, Threats, and Vulnerabilities ---
   {
     id: 101,
-    question: "Which type of malware typically disguises itself as legitimate software?",
+    question: ["Which type of malware typically disguises itself as legitimate software?"],
     options: ["Virus", "Worm", "Trojan Horse", "Spyware"],
     correctAnswers: "Trojan Horse",
     domain: "1.0 Attacks, Threats, and Vulnerabilities",
@@ -31,7 +31,7 @@ const questionsPool = [
     id: 102,
     question: "What is the primary goal of a Denial of Service (DoS) attack?",
     options: ["Data theft", "System disruption", "Privilege escalation", "Malware propagation"],
-    correctAnswers: "System disruption",
+    correctAnswers: ["System disruption"],
     domain: "1.0 Attacks, Threats, and Vulnerabilities",
     difficulty: "Easy",
     explanation: "A DoS attack aims to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services.",
